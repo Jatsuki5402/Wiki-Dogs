@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Perros.css">
+    <title>Coco</title>
+
+    <style>
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://www.zooplus.es/magazine/wp-content/uploads/2019/10/Pudel-768x512-1.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+        footer a{
+			font-family: "Heyam";
+		}
+        
+    </style>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">DATOS</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">JUEGOS</a></li>
+                            <li><a href="index.html" onclick="seleccionar(this)">WIKI</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Raza de Coco</p>
+                <h2>Es Un Caniche </h2>
+                <p class="descripcion">
+                Los caniches se presentan en tres tamaños o variantes: el estándar (más de 40 cm y entre 20 y 32 kg), el enano (aproximadamente 30 cm y de 5 a 9 kg) y el toy (menos de 20 cm y unos 3 a 5 kg).
+
+                Todos comparten un perfil cuadrado, con un cuello alargado y elegante y una espalda recta. La cola está amputada, pero no es corta, por lo que puede moverse alegremente.
+                
+                Los caniches tienen tendencia a parecer patilargos, y tienen el hocico alargado combinado con orejas caídas. Se mueven con pasos ligeros y enérgicos.
+        
+                El pelo es su mayor atractivo.</p>
+                <a id="playButton" >Ladrido</a>
+                <audio id="audioPlayer" src="Audios/caniche.mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Arch/IMGBLUEY/coco.webp" alt="Soy bluey">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre El Personaje</p>
+            <h2>Hola, Soy <span>Coco</span> </h2>
+            <h3>PAPEL EN LA SERIE: AMIGA DE LOS ESTUDIANTES</h3>
+            <p>Coco es un caniche rosa y le encanta usar clips de mariposa azules en su cabello y se sabe que es entusiasta e impaciente. </p>
+            <p>
+                Coco es amigo de Bluey y Bingo. Coco ha aparecido en muchos episodios de Bluey, sobre todo con Snicker's y Bluey en Shadowlands.
+            </p>
+            <h4>Rol en Bluey</h4>
+            <p>
+                Coco es amiga de la mayoría de los estudiantes de la escuela de Calypso. Tiene una mamá, un papá y ocho hermanos mayores.
+                También en su primera aparición parecía no respetar las reglas y pasando a hacer trampa, pero Luego descubre que Las reglas hacen los juegos divertidos.
+            </p>
+            
+           
+            <a id="playButton2">Voz</a>
+            <audio id="audioPlayer2" src="Audios/coco.unknown"></audio>
+        </div>
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <div class="text">
+            <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+          </div>
+
+    </footer>
+
+    <script src="Js/JsPerrito.js"></script>
+    <script src="Js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('audioPlayer2');
+    var playButton = document.getElementById('playButton2');
+  
+    playButton.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = 'Pausar ';
+      } else {
+        audio.pause();
+        playButton.innerHTML = 'Reproducir ';
+      }
+    });
+  });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiki Dog</title>
+    <link rel="icon" type="image/png" href="C:\Users\laptop\Documents\Proyectos\Wiki Dog\Arch\logo.png">
+
+
+<!--=============== CSS ===============-->
+<link rel="stylesheet" href="Css/estiloG.css" />	
+<link rel="stylesheet" href="Css/Razas.css">
+<link rel="stylesheet" href="Css/formulario.css">
+<link rel="stylesheet" href="Css/pie.css">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+	
+<!--=============== HEADER ===============-->
+<section id="inicio"> 
+    
+    <div class="contenido">
+        <header>
+            <a href="#" class="logo">Wiki Dog</a>
+        <div class="contenido-header">
+        
+		<nav>
+			<ul>
+				<li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                <li><a href="#info" onclick="seleccionar(this)">DATOS</a></li>
+                <li><a href="#razas" onclick="seleccionar(this)">RAZAS</a></li>
+                <li><a href="#formulario" onclick="seleccionar(this)">OPINION</a></li>
+                <li><a href="#contact" onclick="seleccionar(this)">CONTACTO</a></li>
+                <li><a href="Actividades.html" onclick="seleccionar(this)">JUEGOS</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	<section class="zona1"></section>
+	</section>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+	<!--=============== HOME ===============-->
+	<section id="info" class="home section--lg">
+		<div class="home__container container grid">
+		  <div class="home__content">
+			<span class="home__subtitle">Bienvenido A</span>
+			<h1 class="home__title">
+			  Wiki <span>Dog's</span>
+			</h1>
+			<p class="home__description">
+			  Una pagina web enfocada en la serie Bluey, aqui podras encontrar informacion sobre las razas 
+        de todos los personajes de la serie y  algunos datos extra.
+			</p>
+      <a id="playButton" class="btn">Intro de la Serie </a>
+        <audio id="audioPlayer" src="Audios/Bluey Theme Tune (Instrument Parade).mp3"></audio>
+		  </div>
+          
+		  <img src="Arch/Logo.png" class="home__img"/>
+		</div>
+	</section>
+
+	<!--=============== RAZAS ===============-->
+    <section id="razas">
+
+    <h2 class="logo">Razas</h2>
+
+    <div class="card-list">
+        <a href="Bluey.html" class="card-item">
+            <img src="https://www.hogarmania.com/archivos/202207/pastor-ganadero-australiano-1280x720x80xX.jpg" alt="Card Image">
+            <span class="developer"> Raza de Bluey</span>
+            <h3>Pastor Australiano </h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+        <a href="Cloe.html" class="card-item">
+            <img src="https://images.hola.com/imagenes/estar-bien/20200828174216/razas-perro-dalmata-gt/0-859-148/dalmata-t.jpg?tx=w_680" alt="Card Image">
+            <span class="designer">Raza de Chloe</span>
+            <h3>Dálmata</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+        <a href="Indy.html" class="card-item">
+            <img src="https://nfnatcane.es/blog/wp-content/uploads/2019/11/lebrel-afgano.jpg" alt="Card Image">
+            <span class="editor">Raza de Indy</span>
+            <h3>Lebrel afgano</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+
+		<a href="Mackenzie.html" class="card-item">
+            <img src="https://www.zooplus.es/magazine/wp-content/uploads/2019/07/border-collie-.jpeg" alt="Card Image">
+            <span class="developer">Raza de Mackenzie</span>
+            <h3>Border Collie</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+        <a href="Winnie.html" class="card-item">
+            <img src="https://www.perro-seguro.es/blog/wp-content/uploads/2019/08/perros-labradores.jpg" alt="Card Image">
+            <span class="designer">Raza de Winnie</span>
+            <h3>Labrador Retriever</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+        <a href="Dougie.html" class="card-item">
+            <img src="https://petkeen.com/wp-content/uploads/2023/06/brown-cavapoo-dog-sitting-in-the-grass_Kelly-Foreman_Shutterstock-760x460.jpg" alt="Card Image">
+            <span class="editor">Raza de Dougie</span>
+            <h3>Cavapoo</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+
+        <a href="Pom pom.html" class="card-item">
+            <img src="https://www.clinicas-veterpet.com/wp-content/uploads/2022/12/BLOG-POMERANIA.jpg" alt="Card Image">
+            <span class="developer"> Raza de Pom Pom</span>
+            <h3>Pomeranio</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+        <a href="Snickers.html" class="card-item">
+            <img src="https://www.thesprucepets.com/thmb/8UgAnzf_7o7i7qPPr528XtM0IW8=/2121x0/filters:no_upscale():strip_icc()/GettyImages-839279536-313d30c290584bc0a207bc6243263bd4.jpg" alt="Card Image">
+            <span class="designer">Raza de Snickers</span>
+            <h3>Dachshund </h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+        <a href="Coco.html" class="card-item">
+            <img src="https://www.zooplus.es/magazine/wp-content/uploads/2019/10/Pudel-768x512-1.jpg" alt="Card Image">
+            <span class="editor">Raza de Coco</span>
+            <h3>Caniche </h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+    </div>
+    </section>
+    
+<!--=============== FORMULARIO ===============-->
+<section id="formulario">
+    <h2 class="logo">Opinion</h2>
+
+<div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">codinglab@gmail.com</div>
+          <div class="text-two">info.codinglab@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Envianos Un Mensaje</div>
+        <p>Nos encantaria escuchar la opinion de los usuarios para conocer que cosas podemos mejorar en el sitio web para garantizar una mejor experiencia
+          sientete libre de escribir tu opinion.
+        </p>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Ingresa tu nombre" />
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Ingresa tu  Correo" />
+          </div>
+          <div class="input-box message-box">
+            <textarea placeholder="Escribe tu Opinion"></textarea>
+          </div>
+          <div class="button">
+            <input type="button" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--=============== FOOTER ===============-->
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+        <div class="content">
+          <div class="title"><span>Sobre Nosotros</span></div>
+
+          <div class="info">
+            <div class="main-content">
+              <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                  <p>Un grupo de estudiantes de programacion que admiran mucho la serie, asi como buscan crear un pagina llamativa para los pequeños del hogar.</p>
+                </div>
+              </div>
+              <div class="center box">
+                <h2>Integrantes</h2>
+                <div class="content">
+                  <div class="place">
+                    <span class="fas fa-heart"></span>
+                    <span class="text">Sofia Jatziri Rosales R</span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-solid fa-star"></span>
+                    <span class="text"> Hannia Citlalli Ramirez C</span>
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text"> Citlaly Juan Garcia </span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> Michael Alexis Rodriguez R</span>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <h2>Opinion</h2>
+                <div class="content">
+                  <form action="#">
+                    <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" required>
+                    </div>
+                    <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                      <button type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+
+        </div>
+      </section>
+      <!-- Footer Section Start -->
+      <footer>
+        <div class="text">
+          <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+        </div>
+      </footer>
+
+<!--=============== MAIN JS ===============-->
+<script src="Js/script.js"></script>
+
+</body>
+</html>

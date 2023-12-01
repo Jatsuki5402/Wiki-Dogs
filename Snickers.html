@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Perros.css">
+    <title>Snickers</title>
+
+    <style>
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://www.thesprucepets.com/thmb/8UgAnzf_7o7i7qPPr528XtM0IW8=/2121x0/filters:no_upscale():strip_icc()/GettyImages-839279536-313d30c290584bc0a207bc6243263bd4.jpg" );
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+
+        footer a{
+			font-family: "Heyam";
+		}
+    </style>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">DATOS</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">JUEGOS</a></li>
+                            <li><a href="index.html" onclick="seleccionar(this)">WIKI</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Raza de Snickers</p>
+                <h2>Es Un Dachshund </h2>
+                <p class="descripcion">Este perro necesita, como mínimo, media hora de ejercicio al día. Antes de dejarlo andar sin correa, hay que asegurarse de que vuelva cuando se le llame, ya que su instinto de caza puede impulsarlo a seguir un rastro o a una presa.
+                </p>
+                <a id="playButton" >Ladrido</a>
+                <audio id="audioPlayer" src="Audios/salchica.mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Arch/IMGBLUEY/Snickers_1.webp" alt="Soy bluey">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre El Personaje</p>
+            <h2>Hola, Soy <span>Sninckers</span> </h2>
+            <h3>PAPEL EN LA SERIE: Amigo de bluey y buudy</h3>
+            <p>Snickers va a la misma escuela que Bluey y los dos han sido amigos desde que eran bebés.
+                A Snickers le encantan los cupcakes, los chorros de agua, pretender ser un reportero de noticias de K9 News y, sobre todo, ¡ser un perro salchicha!
+           </p>
+           <h4>Apariencia</h4>
+           <p>
+            Snickers es un Dachshund  con pelaje marrón y negro. Tiene pies, manos, cola inferior, cejas y hocico marrones, y brazos, piernas, orejas, cola superior, torso y cabeza negros. También tiene una nariz negra y usa una gorra de legionario amarilla con una Australia verde en el frente y puntas verdes.
+            </p>
+           
+            <a id="playButton2">Voz</a>
+            <audio id="audioPlayer2" src="Audios/snick.unknown"></audio>
+        </div>
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <div class="text">
+            <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+          </div>
+
+    </footer>
+
+    <script src="Js/JsPerrito.js"></script>
+    <script src="Js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('audioPlayer2');
+    var playButton = document.getElementById('playButton2');
+  
+    playButton.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = 'Pausar ';
+      } else {
+        audio.pause();
+        playButton.innerHTML = 'Reproducir ';
+      }
+    });
+  });
+    </script>
+</body>
+
+</html>

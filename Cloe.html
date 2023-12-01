@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Perros.css">
+
+    <title>Chloe</title>
+
+    <style>
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://images.hola.com/imagenes/estar-bien/20200828174216/razas-perro-dalmata-gt/0-859-148/dalmata-t.jpg?tx=w_680");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+
+        footer a{
+			font-family: "Heyam";
+		}
+    </style>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">DATOS</a></li>
+                            <li><a href="Actividades.html" onclick="seleccionar(this)">JUEGOS</a></li>
+                            <li><a href="index.html" onclick="seleccionar(this)">WIKI</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Raza de chloe</p>
+                <h2>Es Un Dalmata</h2>
+                <p class="descripcion">El dálmata es un perro elegante, de tamaño medio con un cuerpo esbelto y musculoso. Tiene la cola bastante larga y con una curva fina ascendente. El pelo es corto y denso, con manchas marrones o negras sobre blanco.</p>
+                <a id="playButton"> Ladrido </a>
+            <audio id="audioPlayer" src="Audios/Dalmata.mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Arch/IMGBLUEY/chloe.webp" alt="Soy bluey">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre El Personaje</p>
+            <h2>Hola, Soy <span>Chloe</span> </h2>
+            <h3>PAPEL EN LA SERIE: Mejor amiga de Bluey</h3>
+
+            <p>Chloe es enérgica, Le gustan los juegos de rol, como a papás y mamás o comprar y vender, mayormente estos los juega con Bluey y sus amigos. </p>
+            
+            <h4>Curiosidades</h4>
+            <p>
+               Se reveló que su edad era 7 años al comienzo de "Varita de plumas".
+               En el episodio "Varita de plumas", una invitación a su fiesta de cumpleaños leída por Chilli tiene una dirección de 26 Nudgee Road.
+               En el episodio "Octopus", su casa tiene un número 101
+            </p>
+
+
+            <a id="playButton2">Voz</a>
+            <audio id="audioPlayer2" src="Audios/cloe.unknown"></audio>
+        </div>
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <div class="text">
+            <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+          </div>
+
+    </footer>
+
+    <script src="Js/JsPerrito.js"></script>
+    <script src="Js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('audioPlayer2');
+    var playButton = document.getElementById('playButton2');
+  
+    playButton.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = 'Pausar ';
+      } else {
+        audio.pause();
+        playButton.innerHTML = 'Reproducir ';
+      }
+    });
+  });
+    </script>
+</body>
+
+</html>

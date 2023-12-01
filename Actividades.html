@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juegos</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="Css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/Perros.css">
+  </head>
+  <body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="index.html" class="seleccionado" onclick="seleccionar(this)">WIKI</a></li>
+                            <li><a href="caps.html" onclick="seleccionar(this)">CAPITULOS</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+        </div>
+    </section>
+
+
+    <!-- SECCION Actividades -->
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        
+        <div class="slide swiper-slide">
+          <img src="Arch/images/pizza.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Pizarra de dibujos</span>
+            <h2>
+              Crea una obra maestra y<br />
+              diviertete coloreando
+            </h2>
+            <a href="pizarra.html" class="button">Jugar Ya!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="Arch/images/Rompe.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Rompecabezas</span>
+            <h2>
+              ¿Que personaje se esconde en<br />
+              las piezas desordenadas?
+            </h2>
+            <a href="rompecabezas.html" class="button">Jugar Ya!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="Arch/images/memo.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Memorama</span>
+            <h2>
+              Practica la memoria y <br />
+              acierta si puedes
+            </h2>
+            <a href="memorama.html" class="button">Jugar Ya!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

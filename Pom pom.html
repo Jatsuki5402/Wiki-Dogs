@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Perros.css">
+    <title>Pom pom</title>
+
+    <style>
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://www.clinicas-veterpet.com/wp-content/uploads/2022/12/BLOG-POMERANIA.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+
+        footer a{
+			font-family: "Heyam";
+		}
+    </style>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">DATOS</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">JUEGOS</a></li>
+                            <li><a href="index.html" onclick="seleccionar(this)">WIKI</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Raza de Pom pom</p>
+                <h2>Es Un Pomeranio</h2>
+                <p class="descripcion">Los Pomeranians son fácilmente reconocibles por su lujoso y esponjoso doble pelaje y su cara de zorro con las orejas alerta y puntiagudas. La forma corporal es bastante cuadrada y la cola mullida se riza hacia arriba y sobre su dorso.
+                </p>
+                <a id="playButton" >Ladrido</a>
+                <audio id="audioPlayer" src="Audios/Pomerania .mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Arch/IMGBLUEY/Pom_Pom.webp" alt="Soy bluey">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre El Personaje</p>
+            <h2>Hola, Soy <span>Pom pom</span> </h2>
+            <h3>PAPEL EN LA SERIE: Amiga de bluey y bingo </h3>
+            <p>
+                Pom Pom está llena de energía y tiene una voz imponente y una perseverancia implacable, que compensan con creces su pequeño tamaño.
+           </p>
+           <h4>Apariencia</h4>
+           <p>Pom Pom es un pomerania blanco con orejas internas rosadas y nariz negra. 
+           </p>
+           <h4>Personalidad</h4>
+           <p>
+            Pom Pom es muy enérgico y siempre intentará estar en cualquier situación que Bluey esté logrando. Como se ve en el episodio "See-Saw", ella es consciente de su tamaño después de que no puede bajarse de un poste y no puede subir una pequeña pendiente.
+           </p>
+
+           
+           <a id="playButton2">Voz</a>
+           <audio id="audioPlayer2" src="Audios/pompom.unknown"></audio>
+       </div>
+   </section>
+
+
+   <!-- SECCION FOOTER -->
+   <footer>
+       <div class="text">
+           <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+         </div>
+
+   </footer>
+
+   <script src="Js/JsPerrito.js"></script>
+   <script src="Js/script.js"></script>
+
+   <script>
+       document.addEventListener('DOMContentLoaded', function () {
+   var audio = document.getElementById('audioPlayer2');
+   var playButton = document.getElementById('playButton2');
+ 
+   playButton.addEventListener('click', function () {
+     if (audio.paused) {
+       audio.play();
+       playButton.innerHTML = 'Pausar ';
+     } else {
+       audio.pause();
+       playButton.innerHTML = 'Reproducir ';
+     }
+   });
+ });
+   </script>
+</body>
+
+</html>

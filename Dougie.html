@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Perros.css">
+    <title>Dougie</title>
+
+    <style>
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://petkeen.com/wp-content/uploads/2023/06/brown-cavapoo-dog-sitting-in-the-grass_Kelly-Foreman_Shutterstock-760x460.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+
+        footer a{
+			font-family: "Heyam";
+		}
+    </style>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">DATOS</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">JUEGOS</a></li>
+                            <li><a href="index.html" onclick="seleccionar(this)">WIKI</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Raza de Dougie</p>
+                <h2>Es Un cavapoo </h2>
+                <p class="descripcion">El cavapoo, también llamado cavoodle, es una de las razas de perros híbridos. Surgió de un cruce entre el cavalier king charles spaniel y el caniche enano. No solo destaca por su monería, sino también porque es muy vivaracho y cariñoso.
+                </p>
+                <a id="playButton" >Ladrido</a>
+                <audio id="audioPlayer" src="Audios/cavapoo.mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Arch/IMGBLUEY/Dougie.webp" alt="Soy bluey">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre El Personaje</p>
+            <h2>Hola, Soy <span>Dougie</span> </h2>
+            <h3>PAPEL EN LA SERIE: Amigo de bingo</h3>
+            <p>
+               Dougie es un perrito muy alegre y juguetón al que le encanta especialmente visitar el parque con su madre.
+               Dougie es sordo y ya está aprendiendo por sí mismo el lenguaje de señas auslano para comunicarse con sus amigos y familiares.
+           </p>
+           <h4>Apariencia</h4>
+           <p>
+            Dougie es un cavapoo (mezcla de cavalier King Charles spaniel y caniche) con pelaje marrón claro, cejas color canela y nariz color carbón.
+           </p>
+           <h4>Biografia</h4>
+           <p>Tiene una mamá. Es profundamente sordo y se comunica utilizando la lengua de signos australiana (Auslan).
+           </p>
+
+       </div>
+   </section>
+
+
+   <!-- SECCION FOOTER -->
+   <footer>
+       <div class="text">
+           <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+         </div>
+
+   </footer>
+
+   <script src="Js/JsPerrito.js"></script>
+   <script src="Js/script.js"></script>
+
+   <script>
+       document.addEventListener('DOMContentLoaded', function () {
+   var audio = document.getElementById('audioPlayer2');
+   var playButton = document.getElementById('playButton2');
+ 
+   playButton.addEventListener('click', function () {
+     if (audio.paused) {
+       audio.play();
+       playButton.innerHTML = 'Pausar ';
+     } else {
+       audio.pause();
+       playButton.innerHTML = 'Reproducir ';
+     }
+   });
+ });
+   </script>
+</body>
+
+</html>

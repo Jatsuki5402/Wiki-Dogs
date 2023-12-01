@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Perros.css">
+    <title>Winnie</title>
+
+    <style>
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://www.perro-seguro.es/blog/wp-content/uploads/2019/08/perros-labradores.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+
+        footer a{
+			font-family: "Heyam";
+		}
+    </style>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">DATOS</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">JUEGOS</a></li>
+                            <li><a href="index.html" onclick="seleccionar(this)">WIKI</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Raza de winnie</p>
+                <h2>Es Un Labrador Retriever </h2>
+                <p class="descripcion">
+                    El labrador es un perro grande, fuerte y buena estructura ósea y muscular. El pelaje es corto y denso y puede ser de color negro liso, amarillo o marrón
+                </p>
+                <a id="playButton" >Ladrido</a>
+                <audio id="audioPlayer" src="Audios/retriver.mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Arch/IMGBLUEY/Winnie.webp" alt="Soy bluey">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre El Personaje</p>
+            <h2>Hola, Soy <span>Winnie</span> </h2>
+            <h3>PAPEL EN LA SERIE: Amigo de bluey</h3>
+            <h4>Apariencia</h4>
+            <p>s
+                Winnie es una labrador retriever de tamaño alto de color chocolate. Tiene una nariz marrón oscura, orejas cocoa oscuro lacias, cejas gruesas oscuras y una cola puntiaguda. Winnie también tiene pecas muy notables en el hocico a ambos lados de los ojos.
+            </p>
+            <h4>Biografía</h4>
+            <p>
+                Es la hija de Fido y tiene una hermana sin nombre y una madre no conocida.
+            </p>
+            <h4>Curiosidades</h4>
+            <p>
+                Su animal favorito son los periquitos.Algo en común con otro personaje, Indy, es que menciona a su hermana, pero nunca aparece en la serie.   
+            </p>
+
+           
+            <a id="playButton2">Voz</a>
+            <audio id="audioPlayer2" src="Audios/wini.unknown"></audio>
+        </div>
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <div class="text">
+            <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+          </div>
+
+    </footer>
+
+    <script src="Js/JsPerrito.js"></script>
+    <script src="Js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('audioPlayer2');
+    var playButton = document.getElementById('playButton2');
+  
+    playButton.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = 'Pausar ';
+      } else {
+        audio.pause();
+        playButton.innerHTML = 'Reproducir ';
+      }
+    });
+  });
+    </script>
+</body>
+
+</html>

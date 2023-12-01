@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Perros.css">
+    <title>Mackenzie</title>
+
+    <style>
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://www.zooplus.es/magazine/wp-content/uploads/2019/07/border-collie-.jpeg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+        footer a{
+			font-family: "Heyam";
+		}
+
+    </style>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Wiki Dog's</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">DATOS</a></li>
+                            <li><a href="Actividades.html" onclick="seleccionar(this)">JUEGOS</a></li>
+                            <li><a href="index.html" onclick="seleccionar(this)">WIKI</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Raza de Mackenzie</p>
+                <h2>Es Un Border Collie </h2>
+                <p class="descripcion">El Border Collie es un perro de tamaño mediano
+                  Los machos miden hasta 22 pulgadas y pesan hasta 45 libras (20 kilogramos). Las hembras miden hasta 21 pulgadas y pesan hasta 42 libras (19 kilogramos).
+                </p>
+                <a id="playButton" >Ladrido</a>
+                <audio id="audioPlayer" src="Audios/border.mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Arch/IMGBLUEY/Mackenzie.webp" alt="Soy Mackenzie">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre El Personaje</p>
+            <h2>Hola, Soy <span>Mackenzie</span> </h2>
+            <h3>PAPEL EN LA SERIE: Amigo de bluey</h3>
+            <p>
+               Mackenzie es amigo de Bluey de la escuela. Él y su familia son border collies que se mudaron a Australia desde Nueva Zelanda.
+           </p>
+           <h4>Apariencia</h4>
+           <p>
+               Mackenzie es un Border Collie  con pelaje blanco y negro. Tiene un pie izquierdo negro, una pierna derecha negra, brazos, torso, cola, cabeza y orejas negras, y un pie derecho blanco, una pierna izquierda blanca, manos, hocico, cara y oídos internos blancos. También tiene la nariz negra. Su oreja izquierda apunta hacia arriba, mientras que la derecha cae.
+           </p>
+           <h4>Personalidad</h4>
+           <p>
+               Mackenzie es un niño juguetón, entusiasta y amigable que a veces dice lo que piensa. Tiene un gran corazón y se lo prestará a sus amigos siempre que necesiten ayuda.
+           </p>
+
+
+
+            </p>
+            <a id="playButton2">Voz</a>
+            <audio id="audioPlayer2" src="Audios/mack.unknown"></audio>
+        </div>
+    </section>
+
+
+     <!-- SECCION FOOTER -->
+     <footer>
+        <div class="text">
+            <span>Creado por Brumm, J. (Creador). (2018).  <a href="https://g.co/kgs/E9deef"> Bluey  </a> [Serie de televisión]. | &#169; Ludo Studio. ABC Kids.</span>
+          </div>
+
+    </footer>
+
+    <script src="Js/JsPerrito.js"></script>
+    <script src="Js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('audioPlayer2');
+    var playButton = document.getElementById('playButton2');
+  
+    playButton.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = 'Pausar ';
+      } else {
+        audio.pause();
+        playButton.innerHTML = 'Reproducir ';
+      }
+    });
+  });
+    </script>
+</body>
+
+</html>
